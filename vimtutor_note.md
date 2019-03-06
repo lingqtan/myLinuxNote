@@ -1,5 +1,5 @@
 ## vimtutor 学习笔记
-- `vimtutor<ENTER>`
+`$vimtutor<ENTER>`
 
 ### MOTIONS
 - `j` `k` `h` `l` 光标移动
@@ -14,7 +14,7 @@
 - `%` 移动至括号匹配的另一个括号
 
 ### OPERATORS
-syntax: OPERATOR [NUMBER] MOTION
+syntax `OPERATOR [NUMBER] MOTION`
 - `d` = delete 删除
     - `dw` 删除一个 word
     - `d$` 删除一行 (光标开始)
@@ -47,7 +47,7 @@ syntax: OPERATOR [NUMBER] MOTION
     - `:e FILE2.txt` 
     - `:e ~/.vimrc` -> `:r $VIMRUNTIME/vimrc_example.vim` 将官方示例插入到 .vimrc
 - `:!ls` 不退出 vim 执行 shell 命令
-syntax `:set OPTION` 配置 vim
+- syntax `:set OPTION` 配置 vim
     - `:set ic` 搜索时ignore case
     - `:set hls is` 设置 highlight search 和 incsearch(增量搜索)
     - `:set no[OPTION]` 取消设置[OPTION]
