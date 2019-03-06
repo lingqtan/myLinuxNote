@@ -7,7 +7,7 @@
 - Normal Mode `<ESC>`
 - Visual Mode `V` `v`
 - Select Mode
-    1.1 Normal Mode
+    - 1.1 Normal Mode
         - `h` `j` `k` `l`
         - `f{char}`
         - `$` `0`
@@ -15,9 +15,9 @@
         - **`C` = `c$` change 至行尾**
         - `%` 匹配另一个括号
         - `:h motion.txt`
-    1.2 Insert Mode
+    - 1.2 Insert Mode
         - `i` `a` `A`
-    1.3 Visual Mode
+    - 1.3 Visual Mode
         - `v` `V` **`<C-V>`**
 2. 语法标记 Syntax Highlight Support
 可自订 syntax
