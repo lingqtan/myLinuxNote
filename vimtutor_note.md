@@ -1,7 +1,7 @@
-##vimtutor 学习笔记##
+## vimtutor 学习笔记
 - `vimtutor<ENTER>`
 
-###MOTIONS###
+### MOTIONS
 - `j` `k` `h` `l` 光标移动
 - `w` `e` 单词移动
     - `2e` `3w` 移动2/3个单词
@@ -13,7 +13,8 @@
 - `<C-O>` `<C-I>` 跳转至上一次/下一次位置
 - `%` 移动至括号匹配的另一个括号
 
-###OPERATORS###
+### OPERATORS
+syntax: OPERATOR [NUMBER] MOTION
 - `d` = delete 删除
     - `dw` 删除一个 word
     - `d$` 删除一行 (光标开始)
@@ -27,7 +28,7 @@
     - `yy` 复制一行
     - `yw` 复制一个 word
 
-###MODES###
+### MODES
 - `<ESC>` 切换到 Normal Mode
 - `i` `a` `o` `O` `A` 切换到 Insert Mode
 - `v` 切换到 Visual Mode
@@ -35,7 +36,7 @@
     - `v` -> (高亮选择段落) -> `d` 将选择段落删除
 - `R` 切换到 Replace Mode 
 
-###COMMANDS###
+### COMMANDS
 - `:q!` 不保存直接退出
 - `:w = write` 保存文件
     - `:w FILE2.txt` 另存为FILE2.txt
@@ -46,7 +47,7 @@
     - `:e FILE2.txt` 
     - `:e ~/.vimrc` -> `:r $VIMRUNTIME/vimrc_example.vim` 将官方示例插入到 .vimrc
 - `:!ls` 不退出 vim 执行 shell 命令
-:set OPTION 配置 vim
+syntax `:set OPTION` 配置 vim
     - `:set ic` 搜索时ignore case
     - `:set hls is` 设置 highlight search 和 incsearch(增量搜索)
     - `:set no[OPTION]` 取消设置[OPTION]
@@ -69,7 +70,7 @@
     - `:%s/old/new/g`  替换文件内的 old 为 new
     - `:%s/old/new/gc` 替换文件内的 old 为 new，且每次弹出 prompt 提示是否替换
 
-###FIND###
+### FIND
 - `/` `?` 搜索
     - `/xxx\c` 搜索 xxx 且 ignore case
 - `n` `N` = next 找到下一个/上一个
