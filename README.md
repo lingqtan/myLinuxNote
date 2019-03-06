@@ -1,0 +1,2 @@
+# myLinuxNote
+Linux related notes
